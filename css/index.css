@@ -5,8 +5,6 @@
 
 /* Full Page Tags */
 
-/* Why aren't these selectors working? */
-
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -15,18 +13,17 @@ html, body {
 .container {
     width: 800px;
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
 }
 
-/* fix for selectors not working */
 
-.container h1, .container h2, .container h3, .container h4, .container h5 {
+h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
-.container p {
+
+ p {
     line-height: 1.4;
 }
 
@@ -54,9 +51,8 @@ header nav a {
 
 header nav a:hover{
     color: white;
-    background-color:rgba(26, 26, 26, 0.2);
-    box-shadow: 0 0 0 10px rgba(26, 26, 26, .2);
-    text-shadow: .5px 1px grey;
+    background-color: black;
+    box-shadow: 0 0 0 10px black;
 }
 
 .headerImage {
@@ -184,4 +180,67 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+
+
+/* about page CSS */
+
+.aboutInfo{
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.aboutInfo .text-container {
+    padding: 0 1%;
+    padding-bottom: 20px; 
+}
+
+
+.learnMoreContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+.learnMoreContainer .text-container {
+    padding: 0 1%;
+    padding-bottom: 20px;  
+    margin-top: 20px;
+    
+}
+
+.learnMoreItem{
+    display:flex;
+    flex-flow: column nowrap;
+    width: 48%;
+    padding: 0 1%;  
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.learnMoreItem a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 35%;
+    text-align: center;
+    transition: .3s;
+}
+
+.learnMoreItem a:hover{
+    color: white;
+    background-color: black;
+}
+
+.bottomText {
+    margin: 30px 0;
+    padding: 0 1%;
+    padding-bottom: 20px; 
 }
