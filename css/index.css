@@ -1,60 +1,20 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 * {
     box-sizing: border-box;
 }
 
+/* Full Page Tags */
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
@@ -62,14 +22,45 @@ h1, h2, h3, h4, h5 {
     font-family: 'Rubik', sans-serif;
 }
 
-p {
+
+ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
+
+/* header */
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 40px;
 }
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+    transition:.2s;
+}
+
+header nav a:hover{
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 0 10px black;
+}
+
+.headerImage {
+    margin: 20px 0;
+}
+
+
+/* body */
 
 .top-content {
     display: flex;
@@ -126,9 +117,55 @@ p {
     padding-right: 0;
 }
 
+/* box IDs */
+
+#box1 {
+    background-color: teal;
+}
+
+#box2 {
+    background-color: gold;
+}
+
+#box3 {
+    background-color: cadetblue;
+}
+
+#box4 {
+    background-color: coral;
+}
+
+#box5 {
+    background-color: crimson;
+}
+
+#box6 {
+    background-color: forestgreen;
+}
+
+#box7 {
+    background-color: darkorchid;
+}
+
+#box8 {
+    background-color: hotpink;
+}
+
+#box9 {
+    background-color: indigo;
+}
+
+#box10 {
+    background-color: dodgerblue;
+}
+
+
+/* footer */
 footer {
     width: 100%;
     background: black;
+    display: flex;
+    justify-content: center;
 }
 
 footer nav {
@@ -143,4 +180,67 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+
+
+/* about page CSS */
+
+.aboutInfo{
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.aboutInfo .text-container {
+    padding: 0 1%;
+    padding-bottom: 20px; 
+}
+
+
+.learnMoreContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+.learnMoreContainer .text-container {
+    padding: 0 1%;
+    padding-bottom: 20px;  
+    margin-top: 20px;
+    
+}
+
+.learnMoreItem{
+    display:flex;
+    flex-flow: column nowrap;
+    width: 48%;
+    padding: 0 1%;  
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.learnMoreItem a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 35%;
+    text-align: center;
+    transition: .3s;
+}
+
+.learnMoreItem a:hover{
+    color: white;
+    background-color: black;
+}
+
+.bottomText {
+    margin: 30px 0;
+    padding: 0 1%;
+    padding-bottom: 20px; 
 }
