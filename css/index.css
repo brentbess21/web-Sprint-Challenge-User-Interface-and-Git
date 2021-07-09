@@ -5,7 +5,8 @@
 
 /* Full Page Tags */
 
-/* Why aren't a lot of these selectors working? */
+/* Why aren't these selectors working? */
+
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
@@ -14,15 +15,18 @@ html, body {
 .container {
     width: 800px;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+/* fix for selectors not working */
+
+.container h1, .container h2, .container h3, .container h4, .container h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
 
-p {
+.container p {
     line-height: 1.4;
 }
 
@@ -45,13 +49,14 @@ header nav {
 header nav a {
     text-decoration: none;
     color: black;
+    transition:.2s;
 }
 
 header nav a:hover{
     color: white;
-    background-color: black;
-    padding: 2px 10px;
-    border-radius: 4px;
+    background-color:rgba(26, 26, 26, 0.2);
+    box-shadow: 0 0 0 10px rgba(26, 26, 26, .2);
+    text-shadow: .5px 1px grey;
 }
 
 .headerImage {
